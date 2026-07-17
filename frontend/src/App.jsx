@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 const api = axios.create({
-  baseURL: "https://house-price-prediction-system-backend-nj3j.onrender.com",
+  baseURL:import.meta.env.VITE_URL_API,
 });
 
 function App() {
